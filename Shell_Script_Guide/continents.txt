@@ -1,0 +1,8 @@
+Europe
+Asia
+Africa
+NorthAmerica
+SouthAmerica
+Oceania
+Antarctica
+Colombo

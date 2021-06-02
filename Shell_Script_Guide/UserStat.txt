@@ -1,0 +1,4 @@
+sam   192.168.1.2  https://google.com/mail 200 
+Jeff  192.168.4.4  https://facebook.com/profile 301
+Tom   10.10.1.1    https://google.com/gsuite 301
+Simon 172.1.2.1    https://wso2.com/jobs 200
