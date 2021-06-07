@@ -54,7 +54,7 @@ Eg:5
 
 ```shell
 #!/bin/bash
-Cat FileName.txt | grep -i “Ubuntu”
+cat FileName.txt | grep -i “Ubuntu”
 ```
 
 
@@ -63,7 +63,7 @@ Cat FileName.txt | grep -i “Ubuntu”
 Eg:6 
 ```shell 
 #!/bin/bash
-Cat FileName.txt | grep -v  “GPL” 
+cat FileName.txt | grep -v  “GPL” 
 ``` 
 
 ## Input Output Operations 
