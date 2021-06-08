@@ -48,7 +48,7 @@ Eg:4
 cat FileName.txt | grep “Ubuntu” 
 ```
 
-#### Can Use the option ```-i```  with ```grep``` command  to ignore the case sensitivity. So the below script will print the  lines with  word Ubuntu ,UBUNTU and any case varinet of word ubuntu 
+#### Can Use the option ```-i```  with ```grep``` command  to ignore the case sensitivity. So the below script will print the  lines with  word Ubuntu ,UBUNTU and any case variant of word ubuntu 
 
 Eg:5 
 
