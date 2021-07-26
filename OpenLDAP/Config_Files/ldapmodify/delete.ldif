@@ -1,0 +1,3 @@
+dn: uid=tom,ou=finance,dc=example,dc=com
+delete: givenName
+

@@ -1,0 +1,17 @@
+dn: ou=staff,dc=example,dc=com
+objectclass: organizationalunit
+ou: staff
+description: Company Staff
+
+dn: ou=contractors,ou=staff,dc=example,dc=com
+objectclass: organizationalunit
+ou: contractors
+description: Company contractors
+
+dn: ou=permanent,ou=staff,dc=example,dc=com
+objectclass: organizationalunit
+ou: permanent
+description: Company permanent employees
+
+
+

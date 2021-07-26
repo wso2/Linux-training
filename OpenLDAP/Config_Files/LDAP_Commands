@@ -1,0 +1,38 @@
+#Ldapadd commands
+ldapadd -D "cn=admin,dc=example,dc=com" -h 127.0.0.1  -w'secret' -x -f ROOT_dc
+ldapadd -D "cn=admin,dc=example,dc=com" -h 127.0.0.1  -w'secret' -x -f Directory_Strcture
+ldapadd -D "cn=admin,dc=example,dc=com" -h 127.0.0.1  -w'secret' -x -f Users
+
+
+
+#Ldapsearch commands
+ldapsearch -D "cn=admin,dc=example,dc=com" -h 127.0.0.1  -w'secret' -b dc=example,dc=com
+ldapsearch -D "cn=admin,dc=example,dc=com" -h 127.0.0.1  -w'secret' -b ou=sales,dc=example,dc=com
+ldapsearch -D "cn=admin,dc=example,dc=com" -h 127.0.0.1  -w'secret' -b dc=example,dc=com  “objectclass=*”
+
+ldapsearch -D "cn=admin,dc=example,dc=com" -h 127.0.0.1  -w'secret' -b dc=example,dc=com uid=sam
+ldapsearch -D "cn=admin,dc=example,dc=com" -h 127.0.0.1  -w'123' -b dc=example,dc=com uid=sam mail mobile
+
+ldapsearch -D "cn=admin,dc=example,dc=com" -h 127.0.0.1  -w'secret' -b dc=example,dc=com "objectclass=*"
+
+
+ldapsearch -D "cn=admin,dc=example,dc=com" -h 127.0.0.1  -w'123' -b dc=example,dc=com sn=Cooper
+ldapsearch -D "cn=admin,dc=example,dc=com" -h 127.0.0.1  -w'123' -b dc=example,dc=com (&(sn=Cooper)(employeeNumber=112))
+
+
+ldapsearch -D "cn=admin,dc=example,dc=com" -h 127.0.0.1  -w'Passwd' -b dc=example,dc=com  "(&(street=colombo)(uid=jeff))"
+ldapsearch -D "cn=admin,dc=example,dc=com" -h 127.0.0.1  -w'secret' -b dc=example,dc=com  "(&(objectclass=*)(uid=sam))"
+ldapsearch -D "cn=admin,dc=example,dc=com" -h 127.0.0.1  -w'secret' -b dc=example,dc=com  "(|(street=colombo)(sn=cooper))"
+ldapsearch -D "cn=admin,dc=example,dc=com" -h 127.0.0.1  -w'secret' -b dc=example,dc=com  "(&(objectclass=*)(uid=sam))"
+
+ldapsearch -D "uid=jeff,ou=sales,dc=example,dc=com" -h 127.0.0.1  -w'jeff' -b dc=example,dc=com
+ldapsearch -D "uid=tom,ou=finance,dc=example,dc=com" -h 127.0.0.1  -w'tom' -b dc=example,dc=com
+
+#Ldapdelete
+ldapdelete -h 127.0.0.1  -v -c -D "cn=admin,dc=example,dc=com"  -w'secret'
+ldapdelete -h 127.0.0.1  -v -c -D "cn=admin,dc=example,dc=com"  -w'secret' -f DeleteFile
+
+#Ldapmodify 
+ldapmodify -a -h 127.0.0.1  -D cn=admin,dc=example,dc=com -w'secret' -f add.ldif
+ldapmodify -a -h 127.0.0.1  -D cn=admin,dc=example,dc=com -w'secret' -f modify.ldif
+ldapmodify -a -h 127.0.0.1  -D cn=admin,dc=example,dc=com -w'secret' -f delete.ldif

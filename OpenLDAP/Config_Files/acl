@@ -1,0 +1,11 @@
+access to attrs=mobile
+     by * none
+
+access to attrs=userPassword
+     by * auth
+
+
+access to dn.subtree="dc=example,dc=com"
+       by dn="uid=tom,ou=finance,dc=example,dc=com" read
+       by * none
+

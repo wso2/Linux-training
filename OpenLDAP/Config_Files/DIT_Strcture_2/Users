@@ -1,0 +1,46 @@
+
+dn: uid=tom,ou=contractors,ou=staff,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: tom
+sn: Carter
+employeeNumber: 113
+givenName: Tom Man
+mail: tom@gmail.com
+mobile: 0772222222
+street: Colombo
+uid: tom
+userPassword:: dG9t
+
+
+dn: uid=sam,ou=permanent,ou=staff,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Sam
+sn: Cooper
+employeeNumber: 112
+mail: sam@gmail.com
+mobile: 0771111111
+street: Colombo
+uid: sam
+userPassword:: c2Ft
+
+
+dn: uid=jeff,ou=permanent,ou=staff,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: jeffry
+sn: Cooper
+employeeNumber: 114
+mail: jeff@gmail.com
+mobile: 0773333333
+street: Colombo
+uid: jeff
+userPassword:: amVmZg==
+

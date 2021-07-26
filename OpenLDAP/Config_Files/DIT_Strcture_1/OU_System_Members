@@ -1,0 +1,27 @@
+
+dn: ou=system,dc=example,dc=com
+objectClass: organizationalUnit
+ou: system
+description: System Team
+
+dn: uid=registerapp,ou=system,dc=example,dc=com
+objectClass: account
+objectClass: simpleSecurityObject
+objectClass: top
+uid: registerapp
+userPassword:: cmVnaXN0ZXJhcHA=
+
+dn: uid=financeapp,ou=system,dc=example,dc=com
+objectClass: account
+objectClass: simpleSecurityObject
+objectClass: top
+uid: financeapp
+userPassword:: ZmluYW5jZWFwcA==
+
+dn: uid=salesapp,ou=system,dc=example,dc=com
+objectClass: account
+objectClass: simpleSecurityObject
+objectClass: top
+uid: salesapp
+userPassword:: c2FsZXNhcHA=
+

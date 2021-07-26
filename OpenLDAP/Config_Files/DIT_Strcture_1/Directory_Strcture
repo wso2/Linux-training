@@ -1,0 +1,13 @@
+dn: ou=sales,dc=example,dc=com
+objectclass: organizationalunit
+ou: sales
+description: Sales Team
+
+dn: ou=finance,dc=example,dc=com
+objectclass: organizationalunit
+ou: finance
+description: Finance Team
+
+
+
+

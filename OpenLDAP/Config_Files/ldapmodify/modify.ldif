@@ -1,0 +1,5 @@
+dn: uid=tom,ou=finance,dc=example,dc=com
+changetype: modify
+replace: givenName
+givenName: Tom NewSurName
+

@@ -1,0 +1,7 @@
+1. apt-get update
+2. apt-get install slapd
+3. mv slapd.d slapd.d-backup #Lets disable the directory based configuration
+4. cp slapd.conf  /etc/ldap/slapd.conf  #Copy the LDAP configuration file 
+5. cp ldap.conf   /etc/ldap/ldap.conf   #Copy the LDAP client configuration file 
+6. /etc/init.d/slapd start 
+
